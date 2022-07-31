@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>青叶 - 官网</title>
+    <link rel="icon" href="images/logo.ico">
+    <link rel="stylesheet" href="css/css.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" charset="utf-8"/>
+</head>
+<body>
+<div class="notice">
+    <p class="title">青叶 - 官网</p>
+    <p class="text">o(*￣▽￣*)o</p>
+    <p class="text">每一行代码精心撰写 ☆ 每一位用户真心对待</p>
+</div>
+<div class="trigger">
+    <a id="button1" class="button" href="file/青叶.apk">版本下载</a>
+    <a id="button2" class="button" href="file/使用说明.txt">使用说明</a>
+    <br id="br">
+    <a id="button3" class="button" href="http://gzdun.159km.com">立即购买</a>
+    <a id="button4" class="button" href="https://gzdun.github.io/main">网络验证</a>
+</div>
+<div class="footer">
+    Copyright © 1998 - 2020 All Rights Reserved
+</div>
+<iframe class="music" src="https://music.163.com/outchain/player?type=2&id=27946894&auto=1&height=0"></iframe>
+<script>
+    html = document.documentElement;
+    button1 = document.getElementById("button1");
+    button2 = document.getElementById("button2");
+    button3 = document.getElementById("button3");
+    if (html.offsetWidth >= html.offsetHeight) {
+        button1.style.marginRight = "4%";
+        button2.style.marginRight = "4%";
+        button3.style.marginRight = "4%";
+        document.getElementById("br").style.display = "none";
+        x = Math.floor((1 - 2 * 0.12 - 4 * 0.12 - 3 * 0.04) * html.offsetWidth / 16);
+        y = Math.floor(((1 - 0.62) * 0.62) * html.offsetHeight / 2);
+    }
+    if (html.offsetWidth <= html.offsetHeight) {
+        button1.style.marginRight = "8%";
+        button3.style.marginRight = "8%";
+        button1.style.marginBottom = "4%";
+        button2.style.marginBottom = "4%";
+        x = Math.floor((1 - 2 * 0.12 - 2 * 0.12 - 0.08) * html.offsetWidth / 8);
+        y = Math.floor(((1 - 0.62) * 0.62 - 4) * html.offsetHeight / 2 / 2);
+    }
+    html.style.fontSize = (x < y ? x : y) + "px";
+</script>
+</body>
+</html>
